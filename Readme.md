@@ -2,8 +2,8 @@
 
 * Студент: [Александр Демчук]
 (https://up.htmlacademy.ru/htmlcss/35/user/2077109).
-* Наставник: Анна Варакcина 
-https://htmlacademy.ru/profile/id153610
+* Наставник: [Анна Варакcина] 
+(https://htmlacademy.ru/profile/id153610).
 
 ---
 
