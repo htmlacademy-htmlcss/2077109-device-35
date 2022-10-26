@@ -1,67 +1,73 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="utf-8">
     <title>Страница каталога Device</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
-
   <body>
     <header class="page-header container">
-      <a><img class="logo" src="images/header/device.svg" alt="DEVICE" width="145" height="36"></a>
-      <div class="navigation-search">
-        <div class="navigation-search-input">
-          <form class="navigation-form" method="get" action="https://echo.htmlacademy.ru">
-            <input class="navigation-form-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
-            <label class="navigation-form-label" for="search"></label>
-          </form>
-          <button class="navigation-form-button" type="submit"><span class="search-text">Найти</span></button>
+      <div class="page-header-container">
+        <a><img class="logo" src="images/header/device.svg" alt="DEVICE" width="145" height="36"></a>
+        <div class="navigation-search">
+          <div class="navigation-search-container">
+            <form class="navigation-form" method="get" action="https://echo.htmlacademy.ru">
+              <input class="navigation-form-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
+              <label class="navigation-form-label" for="search"></label>
+            </form>
+            <button class="navigation-form-button" type="submit"><span class="search-text">Найти</span></button>
+          </div>
+          <div class="compare-cart-login">
+            <a class="navigation-link login" href="#">Войти</a>
+            <a class="navigation-link compare" href="#">Сравнить</a>
+            <a class="navigation-link cart" href="#">Корзина</a>
+          </div>
         </div>
-        <a class="navigation-link login" href="#">Войти</a>
-        <a class="navigation-link compare" href="#">Сравнить</a>
-        <a class="navigation-link cart" href="#">Корзина</a>
-      </div>
-      <nav class="navigation">
-        <ul class="navigation-main-list">
-          <li class="navigation-main-item">
-            <a class="navigation-main-link" href="#">Каталог товаров</a>
-            <ul class="sub-menu-list visually-hidden">
-              <li class="sub-menu-item ">
-                <a class="sub-menu-link" href="#">Виртуальная реальность</a>
-                <a class="sub-menu-link" href="#">Моноподы для селфи</a>
-                <a class="sub-menu-link" href="#">Экшен камеры</a>
+        <nav class="navigation">
+          <div class="menu-right">
+            <ul class="navigation-main-list">
+              <li class="navigation-main-item">
+                <a class="navigation-link-two plus" href="#">Каталог товаров</a>
+                <ul class="sub-menu-list visually-hidden">
+                  <li class="sub-menu-item column-one">
+                    <a class="sub-menu-link" href="#">Виртуальная реальность</a>
+                    <a class="sub-menu-link" href="#">Моноподы для селфи</a>
+                    <a class="sub-menu-link" href="#">Экшен камеры</a>
+                  </li>
+                  <li class="sub-menu-item column-two">
+                    <a class="sub-menu-link" href="#">Фитнес-браслеты</a>
+                    <a class="sub-menu-link" href="#">Умные часы</a>
+                  </li>
+                  <li class="sub-menu-item column-three">
+                    <a class="sub-menu-link" href="#">Квадрокоптеры</a>
+                  </li>
+                </ul>
               </li>
-              <li class="sub-menu-item">
-                <a class="sub-menu-link" href="#">Фитнес-браслеты</a>
-                <a class="sub-menu-link" href="#">Умные часы</a>
-              </li>
-              <li class="sub-menu-item">
-                <a class="sub-menu-link" href="#">Квадрокоптеры</a>
-              </li>
+          </div>
+          <div class="menu-right">
+            <li class="navigation-main-item">
+              <a class="navigation-link-two" href="#">Доставка</a>
+            </li>
+            <li class="navigation-main-item">
+              <a class="navigation-link-two" href="#">Гарантия</a>
+            </li>
+            <li class="navigation-main-item">
+              <a class="navigation-link-two" href="#">Контакты</a>
+            </li>
             </ul>
-          </li>
-          <li class="navigation-main-item">
-            <a class="navigation-main-link" href="#">Доставка</a>
-          </li>
-          <li class="navigation-main-item">
-            <a class="navigation-main-link" href="#">Гарантия</a>
-          </li>
-          <li class="navigation-main-item">
-            <a class="navigation-main-link" href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
+          </div>
+        </nav>
+      </div>
     </header>
     <main class="catalog-main container">
       <header class="inner-header">
         <h1 class="inner-header-title">Моноподы для селфи</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">Главная</a>
+            <a class="breadcrumbs-link main" href="index.html">Главная</a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Каталог товаров</a>
+            <a class="breadcrumbs-link catalog">Каталог товаров</a>
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Моноподы для селфи</a>
@@ -184,28 +190,30 @@
                 <span class="goods-item-price">1500 ₽</span>
               </div>
             </article>
-            <button class="button-download-more" type="button">Загрузить ещё</button>
-            <ul class="pagination">
-              <li>
-                <a class="pagination-control" href="#">Назад</a>
-              </li>
-              <li class="pagination-list-wrap">
-                <ul class="pagination-list">
-                  <li class="pagination-item  pagination-item-active">
-                    <a class="pagination-link" href="#">1</a>
-                  </li>
-                  <li class="pagination-item">
-                    <a class="pagination-link" href="#">2</a>
-                  </li>
-                  <li class="pagination-item">
-                    <a class="pagination-link" href="#">3</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a class="pagination-control" href="#">Вперед</a>
-              </li>
-            </ul>
+            <button class="button-download-more" type="button"><span class="button-download-more-text">Загрузить ещё</span></button>
+            <div class="pagination-container">
+              <ul class="pagination">
+                <li>
+                  <a class="pagination-control" href="#">Назад</a>
+                </li>
+                <li class="pagination-list-wrap">
+                  <ul class="pagination-list">
+                    <li class="pagination-item  pagination-item-active">
+                      <a class="pagination-link" href="#">1</a>
+                    </li>
+                    <li class="pagination-item">
+                      <a class="pagination-link" href="#">2</a>
+                    </li>
+                    <li class="pagination-item">
+                      <a class="pagination-link" href="#">3</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="pagination-control" href="#">Вперед</a>
+                </li>
+              </ul>
+            </div>
           </section>
         </section>
       </div>
@@ -222,19 +230,15 @@
           <a class="page-footer-link" href="#">Гарантия</a>
           <a class="page-footer-link" href="#">Контакты</a>
         </div>
-        <div class="page-footer-social-link-block">
-          <a class="page-footer-social-link" href="#"><span>Facebook</span></a>
-          <a class="page-footer-social-link" href="#"><span>Instagram</span></a>
-          <a class="page-footer-social-link" href="#"><span>Twitter</span></a>
+        <div class="page-footer-social-link-block visually-hidden">
+          <a class="page-footer-social-link telegram" href="#"><span>Telegram</span></a>
+          <a class="page-footer-social-link youtube" href="#"><span>Youtube</span></a>
+          <a class="page-footer-social-link twitter" href="#"><span>Twitter</span></a>
         </div>
       </div>
       <div class="page-footer-phone">
         <a class="page-footer-link-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
       </div>
-      <!-- <div class="page-footer-copyright">
-        <img src="images/logo-2.svg" alt="HTML Academy" width="115" height="33">
-      </div> -->
     </footer>
   </body>
-
 </html>

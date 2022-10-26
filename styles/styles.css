@@ -1004,36 +1004,92 @@
  }
 
  .inner-header-title {
-   font-family: "Raleway", sans-serif;
+   font-family: "Raleway", Arial, sans-serif;
    font-style: normal;
    font-weight: 800;
    font-size: 50px;
    line-height: 50px;
-   margin: 0;
+   margin-top: 35px;
+   margin-bottom: 16px;
  }
 
  .breadcrumbs {
    display: flex;
    list-style-type: none;
    width: 429px;
-   font-family: "Rubik", sans-serif;
+   font-family: "Rubik", Arial, sans-serif;
    font-style: normal;
    font-weight: 400;
    font-size: 16px;
    line-height: 20px;
+   padding: 0;
    margin: 0;
+   justify-content: space-between;
+   margin-bottom: 34px;
+   color: #000000;
+   text-decoration: none;
+ }
+
+ .breadcrumbs-link {
+   color: #000000;
+   text-decoration: none;
+ }
+
+ .main {
+   position: relative;
+ }
+
+ .main::after {
+   content: "";
+   display: block;
+   background-image: url(../images/breadcrumbs.svg);
+   width: 5px;
+   height: 8px;
+   position: absolute;
+   right: -22px;
+   background-repeat: no-repeat;
+   transform: translateY(-13px);
+ }
+
+ .catalog {
+   position: relative;
+ }
+
+ .catalog::after {
+   content: "";
+   display: block;
+   background-image: url(../images/breadcrumbs.svg);
+   width: 5px;
+   height: 8px;
+   position: absolute;
+   right: -22px;
+   background-repeat: no-repeat;
+   transform: translateY(-13px);
  }
 
  .catalog-container {
    display: flex;
    width: 1160px;
    margin: 0 auto;
+   background-color:#F0F0F0;
  }
 
  .sidebar {
    display: flex;
    width: 320px;
+   min-height: 1316px;
    flex-direction: column;
+ }
+
+ .sidebar-title {
+   font-family: "Raleway", Arial, sans-serif;
+   font-style: normal;
+   font-weight: 800;
+   font-size: 16px;
+   line-height: 19px;
+   text-transform: uppercase;
+   padding: 0;
+   margin: 0;
  }
 
  .goods-sort {
@@ -1045,33 +1101,69 @@
 
  .goods-list {
    display: flex;
- }
-
- .goods-item {
-   display: flex;
-   flex-direction: column;
+   width: 840px;
+   flex-wrap: wrap;
+   background-color: #FFFFFF;
  }
 
  .button-download-more {
+   width: 760px;
+   height: 55px;
    display: flex;
- }
-
- .breadcrumbs-link {
-   color: #000000;
-   text-decoration: none;
- }
-
- .sidebar-title {
-   font-family: "Raleway", sans-serif;
+   align-items: center;
+   justify-content: center;
+   padding: 0;
+   font-family: "Raleway", Arial, sans-serif;
    font-style: normal;
    font-weight: 800;
    font-size: 16px;
    line-height: 19px;
+   text-align: center;
+   letter-spacing: 0.2em;
    text-transform: uppercase;
+   background-color: #ffffff;
+   border: 3px solid #E5E5E5;
+   margin: 0 auto;
+   margin-bottom: 44px;
  }
 
+ .button-download-more-text {
+   padding-top: 8px;
+ }
+
+.pagination-container {
+  display: flex;
+  width: 760px;
+  height: 71px;
+  margin: 0 auto;
+  margin-bottom: 78px;
+}
+
+.pagination {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 760px;
+  height: 71px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #EBEBEB;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.pagination-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  width: 200px;
+  justify-content: space-around;
+}
+
+
  .filter-title {
-   font-family: "Rubik", sans-serif;
+   font-family: "Rubik", Arial, sans-serif;
    font-style: normal;
    font-weight: 700;
    font-size: 18px;
@@ -1079,7 +1171,7 @@
  }
 
  .filter-checkbox-label {
-   font-family: "Rubik", sans-serif;
+   font-family: "Rubik", Arial, sans-serif;
    font-style: normal;
    font-weight: 400;
    font-size: 16px;
@@ -1087,7 +1179,7 @@
  }
 
  .goods-sort-title {
-   font-family: "Raleway", sans-serif;
+   font-family: "Raleway", Arial, sans-serif;
    font-style: normal;
    font-weight: 800;
    font-size: 16px;
@@ -1096,7 +1188,7 @@
  }
 
  .filter-button {
-   font-family: "Raleway", sans-serif;
+   font-family: "Raleway", Arial, sans-serif;
    font-style: normal;
    font-weight: 800;
    font-size: 18px;
@@ -1107,7 +1199,7 @@
  }
 
  .goods-item-link {
-   font-family: "Rubik", sans-serif;
+   font-family: "Rubik", Arial, sans-serif;
    font-style: normal;
    font-weight: 700;
    font-size: 18px;
@@ -1117,7 +1209,7 @@
  }
 
  .goods-item-price {
-   font-family: "Rubik", sans-serif;
+   font-family: "Rubik", Arial, sans-serif;
    font-style: normal;
    font-weight: 400;
    font-size: 18px;
@@ -1125,17 +1217,9 @@
    color: #444444;
  }
 
- .button-download-more {
-   font-family: "Raleway", sans-serif;
-   font-style: normal;
-   font-weight: 800;
-   font-size: 16px;
-   line-height: 19px;
-   text-transform: uppercase;
- }
 
  .pagination-control {
-   font-family: "Raleway", sans-serif;
+   font-family: "Raleway", Arial, sans-serif;
    font-style: normal;
    font-weight: 800;
    font-size: 18px;
@@ -1146,7 +1230,7 @@
  }
 
  .pagination-link {
-   font-family: "Rubik", sans-serif;
+   font-family: "Rubik", Arial, sans-serif;
    font-style: normal;
    font-weight: 400;
    font-size: 16px;
@@ -1156,7 +1240,7 @@
  }
 
  .goods-item-more-link {
-   font-family: "Raleway", sans-serif;
+   font-family: "Raleway", Arial, sans-serif;
    font-style: normal;
    font-weight: 800;
    font-size: 18px;
