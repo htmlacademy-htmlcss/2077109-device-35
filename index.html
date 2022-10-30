@@ -1,50 +1,52 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
+
   <body>
     <header class="page-header container">
       <div class="page-header-container">
         <a><img class="logo" src="images/header/device.svg" alt="DEVICE" width="145" height="36"></a>
-        <div class="navigation-search">
-          <div class="navigation-search-container">
+        <div class="navigation-search-container">
+          <div class="navigation-search">
             <form class="navigation-form" method="get" action="https://echo.htmlacademy.ru">
               <input class="navigation-form-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
               <label class="navigation-form-label" for="search"></label>
+              <button class="navigation-form-button" type="submit"><span class="search-text">Найти</span></button>
             </form>
-            <button class="navigation-form-button" type="submit"><span class="search-text">Найти</span></button>
           </div>
           <div class="compare-cart-login">
             <a class="navigation-link login" href="#">Войти</a>
-            <a class="navigation-link compare" href="#">Сравнить</a>
-            <a class="navigation-link cart" href="#">Корзина</a>
+            <div class="compare-cart">
+              <a class="navigation-link compare" href="#">Сравнить</a>
+              <a class="navigation-link cart" href="#">Корзина</a>
+            </div>
           </div>
         </div>
+        <!-- catalog -->
         <nav class="navigation">
-          <div class="menu-right">
-            <ul class="navigation-main-list">
-              <li class="navigation-main-item">
-                <a class="navigation-link-two plus" href="#">Каталог товаров</a>
-                <ul class="sub-menu-list visually-hidden">
-                  <li class="sub-menu-item column-one">
-                    <a class="sub-menu-link" href="#">Виртуальная реальность</a>
-                    <a class="sub-menu-link" href="#">Моноподы для селфи</a>
-                    <a class="sub-menu-link" href="#">Экшен камеры</a>
-                  </li>
-                  <li class="sub-menu-item column-two">
-                    <a class="sub-menu-link" href="#">Фитнес-браслеты</a>
-                    <a class="sub-menu-link" href="#">Умные часы</a>
-                  </li>
-                  <li class="sub-menu-item column-three">
-                    <a class="sub-menu-link" href="#">Квадрокоптеры</a>
-                  </li>
-                </ul>
-              </li>
-          </div>
-          <div class="menu-right">
+          <ul class="navigation-main-list">
+            <li class="navigation-main-item catalog">
+              <a class="navigation-link-two plus" href="#">Каталог товаров</a>
+              <ul class="sub-menu-list ">
+                <li class="sub-menu-item column-one">
+                  <a class="sub-menu-link" href="#">Виртуальная реальность</a>
+                  <a class="sub-menu-link" href="#">Моноподы для селфи</a>
+                  <a class="sub-menu-link" href="#">Экшен камеры</a>
+                </li>
+                <li class="sub-menu-item column-two">
+                  <a class="sub-menu-link" href="#">Фитнес-браслеты</a>
+                  <a class="sub-menu-link" href="#">Умные часы</a>
+                </li>
+                <li class="sub-menu-item column-three">
+                  <a class="sub-menu-link" href="#">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </li>
             <li class="navigation-main-item">
               <a class="navigation-link-two" href="#">Доставка</a>
             </li>
@@ -54,8 +56,7 @@
             <li class="navigation-main-item">
               <a class="navigation-link-two" href="#">Контакты</a>
             </li>
-            </ul>
-          </div>
+          </ul>
         </nav>
       </div>
     </header>
@@ -150,36 +151,38 @@
           <a class="main-goods-link copter" href="#"><span class="main-goods-link-text">Квадрокоптеры</span></a>
         </div>
       </section>
-      <div class="services-slider-wrap">
-        <h2 class="visually-hidden">Наши сервисы</h2>
-        <div class="service-slider-controls">
-          <input class="services-slider-input  visually-hidden" id="services-control-1" type="radio"
-            name="services-control" checked>
-          <label class="services-slider-label delivery" for="services-control-1">Доставка</label>
-          <input class="services-slider-input  visually-hidden" id="services-control-2" type="radio"
-            name="services-control">
-          <label class="services-slider-label warranty" for="services-control-2">Гарантия</label>
-          <input class="services-slider-input  visually-hidden" id="services-control-3" type="radio"
-            name="services-control">
-          <label class="services-slider-label credit" for="services-control-3">Кредит</label>
-        </div>
-        <div class="services-slider-item">
-          <b class="service-slider-text-header">Доставка</b>
-          <p class="service-slider-text-main">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
-            бесплатно! Ведь мы неплохо
-            заработаем, поднимая его на ваш этаж.</p>
-        </div>
-        <div class="services-slider-item visually-hidden">
-          <b class="service-slider-text-header">Гарантия</b>
-          <p class="service-slider-text-main">Если из-за возгорания купленного у нас товара у вас сгорит дом - не
-            переживайте, мы выдадим вам
-            новый.Товар, не дом, конечно же.</p>
-        </div>
-        <div class="services-slider-item visually-hidden">
-          <b class="service-slider-text-header">Кредит</b>
-          <p class="service-slider-text-main">Залезть в долговую яму стало проще! Кредитные консультанты подберут для
-            вас наиболее выгодные условия
-            кредита. Выгодные для нашего банка, разумеется.</p>
+      <div class="services-slider-wrap-container">
+        <div class="services-slider-wrap">
+          <h2 class="visually-hidden">Наши сервисы</h2>
+          <div class="service-slider-controls">
+            <input class="services-slider-input  visually-hidden" id="services-control-1" type="radio"
+              name="services-control" checked>
+            <label class="services-slider-label delivery" for="services-control-1">Доставка</label>
+            <input class="services-slider-input  visually-hidden" id="services-control-2" type="radio"
+              name="services-control">
+            <label class="services-slider-label warranty" for="services-control-2">Гарантия</label>
+            <input class="services-slider-input  visually-hidden" id="services-control-3" type="radio"
+              name="services-control">
+            <label class="services-slider-label credit" for="services-control-3">Кредит</label>
+          </div>
+          <div class="services-slider-item">
+            <b class="service-slider-text-header">Доставка</b>
+            <p class="service-slider-text-main">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
+              бесплатно! Ведь мы неплохо
+              заработаем, поднимая его на ваш этаж.</p>
+          </div>
+          <div class="services-slider-item visually-hidden">
+            <b class="service-slider-text-header">Гарантия</b>
+            <p class="service-slider-text-main">Если из-за возгорания купленного у нас товара у вас сгорит дом - не
+              переживайте, мы выдадим вам
+              новый.Товар, не дом, конечно же.</p>
+          </div>
+          <div class="services-slider-item visually-hidden">
+            <b class="service-slider-text-header">Кредит</b>
+            <p class="service-slider-text-main">Залезть в долговую яму стало проще! Кредитные консультанты подберут для
+              вас наиболее выгодные условия
+              кредита. Выгодные для нашего банка, разумеется.</p>
+          </div>
         </div>
       </div>
       <div>
@@ -214,45 +217,63 @@
           </div>
         </div>
       </div>
-      <section class="subscribe">
-        <h2 class="visually-hidden">Подписка на рассылку</h2>
-        <div class="subscribe-up">
-          <b class="subscribe-text-bold">Подпишитесь на рассылку</b>
-          <p class="subscribe-text">Еженедельный дайджест с обзорами новинок,<br> длительными тест-драйвами,
-            распаковками, а также акции, спецпредложения и вот это вот всё.</p>
-        </div>
-        <div class="subscribe-down">
-          <form class="subscribe-form" method="get" action="https://echo.htmlacademy.ru">
-            <input class="subscribe-form-input" id="subscribe" type="email" name="subscribe" placeholder="Ваш e-mail">
-            <button class="subscribe-form-button" type="submit"><span
-                class="subscribe-form-button-text">Подписаться</span></button>
-            <label class="navigation-form-label" for="subscribe"></label>
-          </form>
-          <p class="subscribe-text tick">Это бесплатно</p>
-        </div>
+      <div class="subscribe-container">
+        <section class="subscribe">
+          <h2 class="visually-hidden">Подписка на рассылку</h2>
+          <div class="subscribe-up">
+            <b class="subscribe-text-bold">Подпишитесь на рассылку</b>
+            <p class="subscribe-text">Еженедельный дайджест с обзорами новинок,<br> длительными тест-драйвами,
+              распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+          </div>
+          <div class="subscribe-down">
+            <form class="subscribe-form" method="get" action="https://echo.htmlacademy.ru">
+              <input class="subscribe-form-input" id="subscribe" type="email" name="subscribe" placeholder="Ваш e-mail">
+              <button class="subscribe-form-button" type="submit"><span
+                  class="subscribe-form-button-text">Подписаться</span></button>
+              <label class="navigation-form-label" for="subscribe"></label>
+            </form>
+            <p class="subscribe-text tick">Это бесплатно</p>
+          </div>
+      </div>
       </section>
     </main>
-    <footer class="page-footer">
-      <div class="page-footer-info">
-        <a class="page-footer-logo" href="index.html"><img src="images/logo.svg" alt="DEVICE" width="145"
-            height="36"></a>
-        <adress class="page-footer-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</adress>
-      </div>
-      <div class="page-footer-services">
-        <div class="page-footer-link-block">
-          <a class="page-footer-link" href="#">Доставка</a>
-          <a class="page-footer-link" href="#">Гарантия</a>
-          <a class="page-footer-link" href="#">Контакты</a>
+    <div class="page-footer-container">
+      <footer class="page-footer">
+        <div class="page-footer-info">
+          <a class="page-footer-logo" href="index.html"><img src="images/logo.svg" alt="DEVICE" width="145"
+              height="36"></a>
+          <adress class="page-footer-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</adress>
         </div>
-        <div class="page-footer-social-link-block visually-hidden">
-          <a class="page-footer-social-link telegram" href="#"><span>Telegram</span></a>
-          <a class="page-footer-social-link youtube" href="#"><span>Youtube</span></a>
-          <a class="page-footer-social-link twitter" href="#"><span>Twitter</span></a>
+        <div class="page-footer-services">
+          <div class="page-footer-link-block">
+            <a class="page-footer-link delivery-link" href="#">Доставка</a>
+            <a class="page-footer-link warranty-link" href="#">Гарантия</a>
+            <a class="page-footer-link contacts-link" href="#">Контакты</a>
+          </div>
+          <ul class="page-footer-social-link-block">
+            <li class="page-footer-social-link-item-telegram">
+              <a class="page-footer-social-link telegram" href="https://t.me/htmlacademy"><span
+                          class=" visually-hidden">Telegram</span></a>
+              <svg class="telegram-link" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="14" height="12" fill="none" viewBox="0 0 14 12"><path fill="#444" d="M12.443.074.623 4.632c-.807.324-.802.774-.148.974l3.035.947 7.021-4.43c.332-.202.635-.093.386.128L5.228 7.385l-.209 3.129c.307 0 .442-.141.614-.307l1.474-1.433 3.066 2.264c.565.312.971.152 1.112-.523l2.013-9.485c.206-.826-.316-1.2-.855-.956Z"/></svg>
+            </li>
+            <li class="page-footer-social-link-item-youtube">
+              <a class="page-footer-social-link youtube" href="https://www.youtube.com/user/htmlacademyru"><span
+                          class="visually-hidden">Youtube</span></a>
+              <svg class="youtube-link" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="16" height="11" fill="none" viewBox="0 0 16 11"><path fill="#444" d="M15.667 1.675a1.857 1.857 0 0 0-.51-.847 2.034 2.034 0 0 0-.893-.495c-1.252-.33-6.268-.33-6.268-.33a51.083 51.083 0 0 0-6.26.314 2.107 2.107 0 0 0-.892.506c-.246.238-.425.53-.518.851A19.393 19.393 0 0 0 0 5.337C-.008 6.564.101 7.79.326 8.999c.091.32.27.611.516.846.248.236.556.406.894.496 1.27.329 6.26.329 6.26.329 2.094.024 4.188-.08 6.268-.313.335-.087.642-.257.892-.495.244-.23.42-.524.51-.847.23-1.207.342-2.434.334-3.663a17.72 17.72 0 0 0-.333-3.678ZM6.402 7.619V3.055l4.173 2.282L6.402 7.62Z"/></svg>
+            </li>
+            <li class="page-footer-social-link-item-twitter">
+              <a class="page-footer-social-link twitter" href="https://twitter.com/htmlacademy_ru"><span
+                          class="visually-hidden">Twitter</span></a>
+              <svg class="twitter-link" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="15" height="15" fill="none" viewBox="0 0 15 15"><path fill="#444" d="M9.7.155c1.5-.5 2.6.3 3.2 1.1.5-.2 1.1-.4 1.7-.6 0 .8-.5 1.4-.8 1.6.7.2 1.2-.4 1.2-.4-.1.9-.9 1.7-1.4 1.9-.2 6.3-2.8 10.4-8.9 10.3h-.4c-.3 0-3.7-.4-4.3-1.8 2 .2 3.4-.4 4.1-1.1-.8-.3-2.4-.4-2.6-2.8.3.2.5.3 1.1.2-1.1-.8-2.3-1.5-2.2-3.5.3.3.9.5 1.2.4-.6-.2-1.8-3.1-.8-4.6 1.6 1.7 3.3 3.4 6.3 3.5.2-2.1 1-3.5 2.6-4.2Z"/></svg>
+            </li>
+          </ul>
         </div>
-      </div>
-      <div class="page-footer-phone">
-        <a class="page-footer-link-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
-      </div>
-    </footer>
+        <div class="page-footer-phone">
+          <a class="page-footer-link-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+          <svg class="html-logo" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="115" height="33" fill="none" viewBox="0 0 115 33"><path fill="#FFC700" d="M0 12.9v2.6h2.5v-2.6H0ZM11.6 4.5c-1.6 0-2.8.7-3.6 1.7h-.1V0h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2V9.4c.1-3-1.8-4.9-4.5-4.9ZM26.6 4.8h-4.8V1.1h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V6.8h4.8v-2ZM41.1 4.6c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1V4.8H29v10.6h2V10c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2V9.8c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V8.9c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 12.7c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V0h-2v12.7ZM28.9 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22c-.5-2.4-2.6-4.1-5.4-4.1-3.4 0-5.6 2.5-5.6 5.6 0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1c-.4 1.3-1.7 2.3-3.3 2.3-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1V22ZM55.1 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 19.8c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V13.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 17.9c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6ZM98.2 17.9c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z"/></svg>
+        </div>
+      </footer>
+    </div>
   </body>
+
 </html>
