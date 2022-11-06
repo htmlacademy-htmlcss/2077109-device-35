@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
@@ -196,31 +197,31 @@
           <div class="service-slider-controls">
             <input class="services-slider-input  visually-hidden" id="services-control-1" type="radio"
               name="services-control" checked>
-            <label class="services-slider-label delivery" for="services-control-1">Доставка</label>
+            <label class="services-slider-label delivery" for="services-control-1"><span class="service-text">Доставка</span></label>
             <input class="services-slider-input  visually-hidden" id="services-control-2" type="radio"
               name="services-control">
-            <label class="services-slider-label warranty" for="services-control-2">Гарантия</label>
+            <label class="services-slider-label warranty" for="services-control-2"><span class="service-text">Гарантия</span></label>
             <input class="services-slider-input  visually-hidden" id="services-control-3" type="radio"
               name="services-control">
-            <label class="services-slider-label credit" for="services-control-3">Кредит</label>
+            <label class="services-slider-label credit" for="services-control-3"><span class="service-text">Кредит</span></label>
           </div>
-          <div class="services-slider-item">
+          <div class="services-slider-item delivery">
             <b class="service-slider-text-header">Доставка</b>
             <p class="service-slider-text-main">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
               бесплатно! Ведь<br> мы неплохо
               заработаем, поднимая его на ваш этаж.</p>
           </div>
-          <div class="services-slider-item visually-hidden">
+          <div class="services-slider-item waranty visually-hidden">
             <b class="service-slider-text-header">Гарантия</b>
-            <p class="service-slider-text-main">Если из-за возгорания купленного у нас товара у вас сгорит дом - не
-              переживайте, мы выдадим вам
-              новый.Товар, не дом, конечно же.</p>
+            <p class="service-slider-text-main waranty">Если из-за возгорания купленного у нас товара у вас сгорит дом - не
+              переживайте, мы выдадим вам новый.
+              Товар, не дом, конечно же.</p>
           </div>
-          <div class="services-slider-item visually-hidden">
+          <div class="services-slider-item credit visually-hidden">
             <b class="service-slider-text-header">Кредит</b>
-            <p class="service-slider-text-main">Залезть в долговую яму стало проще! Кредитные консультанты подберут для
+            <p class="service-slider-text-main credit">Залезть в долговую яму стало проще! Кредитные консультанты подберут для
               вас наиболее выгодные условия
-              кредита. Выгодные для нашего банка, разумеется.</p>
+              кредита. Выгодные для банка, разумеется.</p>
           </div>
         </div>
       </div>
@@ -249,9 +250,9 @@
             <p class="about-us-contacts-text">Вы можете забрать товар сами, заехав в наш офис.
               Заодно&nbsp;сможете проверить работоспособность покупки.</p>
             <b class="contacts-text-bold">Интернет-магазин «Девайс»</b>
-            <adress class="contacts-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.
+            <p class="contacts-text adress">Санкт-Петербург, набережная реки Карповки, 5, литера П.
               <a class="tel" href="tel:+78128121212">+7(812)812-12-12</a>
-            </adress>
+            </p>
             <b class="contacts-text-bold">Время работы</b>
             <p class="contacts-text time-job">пн—пт: с 10:00 до 22:00 сб—вс: с 10:00 до 19:00</p>
             <a class="contacts-button" href="#">Напишите нам</a>
@@ -276,15 +277,15 @@
             </form>
             <p class="subscribe-text tick"><span class="text-tick">Это бесплатно</span></p>
           </div>
+        </section>
       </div>
-      </section>
     </main>
     <div class="page-footer-container">
       <footer class="page-footer">
         <div class="page-footer-info">
           <a class="page-footer-logo" href="index.html"><img src="images/logo.svg" alt="DEVICE" width="145"
               height="36"></a>
-          <adress class="page-footer-text">Санкт-Петербург,&nbspнабережная реки Карповки, 5, литера П.</adress>
+          <p class="page-footer-text">Санкт-Петербург,&nbsp;набережная реки Карповки, 5, литера П.</p>
         </div>
         <div class="page-footer-services">
           <div class="page-footer-link-block">
@@ -372,7 +373,8 @@
                         <circle cx="13" cy="13" r="13" fill="#FFE17F" />
                         <path fill="#000" d="M14 7h-2v2h2V7ZM14 11h-2v8h2v-8Z" /></svg>
                     </button>
-                    <span class="tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям <br>к провозу багажа.</span>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно.
+                      Привезём сколько получится по требованиям <br>к провозу багажа.</span>
                   </span>
                 </span>
 

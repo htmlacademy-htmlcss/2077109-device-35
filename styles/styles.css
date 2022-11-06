@@ -1097,7 +1097,43 @@
    text-transform: uppercase;
    position: relative;
    margin-top: -38px;
+   letter-spacing: 0.2em;
  }
+
+
+
+
+
+
+
+.services-slider-input:checked + .services-slider-label::after {
+  display: none;
+}
+
+/* .service-text {
+  display: flex;
+  width: 160px;
+  justify-content: center;
+  margin-right: 120px;
+} */
+
+.services-slider-input:checked + .services-slider-label {
+  box-sizing: border-box;
+  color: #FFE17F;
+  width: 280px;
+  background-color: #000000;
+  padding-right: 118px;
+}
+
+/* .services-slider-input:checked + .service-text {
+
+} */
+
+
+
+
+
+
 
  .services-slider-label {
    display: flex;
@@ -1107,6 +1143,10 @@
    align-items: center;
    position: relative;
    z-index: 1;
+ }
+
+ .services-slider-label:not(:last-child) {
+  margin-bottom: 35px;
  }
 
  .services-slider-label:active:checked {
@@ -1135,6 +1175,12 @@
    top: -63px;
  }
 
+ .service-slider-text-main.waranty,
+ .service-slider-text-main.credit {
+  display: flex;
+  width: 475px;
+ }
+
  .services-slider-item {
    display: flex;
    flex-direction: column;
@@ -1142,17 +1188,41 @@
    margin-left: 117px;
    margin-top: -28px;
    padding-right: 246px;
+
  }
 
- .services-slider-item::after {
+ .services-slider-item.delivery::after {
    content: "";
    display: block;
    width: 136px;
    height: 164px;
    background-image: url(../images/services/dilivery.svg);
    position: absolute;
+   background-repeat: no-repeat;
    transform: translateX(550px);
  }
+
+ .services-slider-item.waranty::after {
+  content: "";
+  display: block;
+  width: 171px;
+  height: 195px;
+  background-image: url(../images/services/warranty.svg);
+  position: absolute;
+  background-repeat: no-repeat;
+  transform: translateX(555px) translateY(-12px);
+ }
+
+.services-slider-item.credit::after {
+  content: "";
+  display: block;
+  width: 156px;
+  height: 188px;
+  background-image: url(../images/services/credit.svg);
+  position: absolute;
+  background-repeat: no-repeat;
+  transform: translateX(573px) translateY(-9px);
+}
 
  .service-slider-text-header {
    margin: 0;
@@ -1395,6 +1465,11 @@
    font-size: 18px;
    line-height: 30px;
    margin-bottom: 30px;
+ }
+
+ .contacts-text.adress {
+  margin: 0;
+  margin-bottom: 30px;
  }
 
  .contacts-text-bold {
@@ -1852,6 +1927,7 @@
    line-height: 20px;
    color: #FFFFFF;
    padding-bottom: 64px;
+   margin: 0;
  }
 
  .page-footer-info::after {
@@ -2218,7 +2294,6 @@
    background-image: url(../images/button.svg);
    position: absolute;
    z-index: -1;
-   transform: translateY(-2px);
  }
 
  .modal-form-button::after {
@@ -2536,7 +2611,7 @@
  }
 
  .catalog-filter-title.color-title {
-  margin-bottom: 15px;
+  margin-bottom: 19px;
  }
 
  .catalog-filter-title.bluetooth-title {
