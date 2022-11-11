@@ -14,8 +14,8 @@
       <div class="navigation-search-container">
         <div class="navigation-search">
           <form class="navigation-form" method="get" action="https://echo.htmlacademy.ru">
-            <label class="navigation-form-label"><input class="navigation-form-input" type="search" name="search"
-                placeholder="Поиск по сайту"></label>
+            <label class="navigation-form-label" tabindex="2"><input class="navigation-form-input" type="search" name="search"
+              placeholder="Поиск по сайту"><span class="visually-hidden">Поиск по сайту</span></label>
             <button class="navigation-form-button" type="submit"><span class="search-text">Найти</span></button>
           </form>
         </div>
@@ -79,7 +79,7 @@
             </ul>
           </li>
           <li class="navigation-main-item">
-            <a class="navigation-link-catalog" href="#">Доставка</a>
+            <a class="navigation-link-catalog" href="#" disabled>Доставка</a>
           </li>
           <li class="navigation-main-item">
             <a class="navigation-link-catalog" href="#">Гарантия</a>
@@ -197,7 +197,7 @@
           <div class="service-slider-controls">
             <input class="services-slider-input  visually-hidden" id="services-control-1" type="radio"
               name="services-control" checked>
-            <label class="services-slider-label delivery" for="services-control-1"><span
+            <label class="services-slider-label delivery" for="services-control-1" tabindex="1"><span
                 class="service-text">Доставка</span></label>
             <input class="services-slider-input  visually-hidden" id="services-control-2" type="radio"
               name="services-control">
@@ -208,9 +208,9 @@
             <label class="services-slider-label credit" for="services-control-3"><span
                 class="service-text">Кредит</span></label>
           </div>
-          <div class="services-slider-item delivery">
+          <div class="services-slider-item delivery ">
             <b class="service-slider-text-header">Доставка</b>
-            <p class="service-slider-text-main">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
+            <p class="service-slider-text-main delivery">Мы с удовольствием доставим ваш товар прямо <br> к вашему подъезду совершенно
               бесплатно! Ведь<br> мы неплохо
               заработаем, поднимая его на ваш этаж.</p>
           </div>
@@ -221,7 +221,7 @@
               переживайте, мы выдадим вам новый.
               Товар, не дом, конечно же.</p>
           </div>
-          <div class="services-slider-item credit visually-hidden">
+          <div class="services-slider-item credit visually-hidden ">
             <b class="service-slider-text-header">Кредит</b>
             <p class="service-slider-text-main credit">Залезть в долговую яму стало проще! Кредитные консультанты
               подберут для
@@ -231,9 +231,9 @@
         </div>
       </div>
       <div>
-        <div class="rare-bar">
+        <a class="rare-bar" tabindex="3">
           <p class="rare-product">Доставим редкий товар под заказ</p>
-        </div>
+        </a>
         <div class="about-us-contacts container">
           <div class="about-us">
             <h2 class="about-us-contacts-title">О нас</h2>
@@ -275,10 +275,10 @@
           <div class="subscribe-down">
             <form class="subscribe-form" method="get" action="https://echo.htmlacademy.ru">
               <input class="subscribe-form-input" id="subscribe" type="email" name="subscribe" placeholder="Ваш e-mail"
-                required>
+                >
               <button class="subscribe-form-button" type="submit"><span
                   class="subscribe-form-button-text">Подписаться</span></button>
-              <label class="navigation-form-label" for="subscribe"></label>
+              <label class="subscribe-form-label" for="subscribe"></label>
             </form>
             <p class="subscribe-text tick"><span class="text-tick">Это бесплатно</span></p>
           </div>
@@ -288,7 +288,7 @@
     <div class="page-footer-container">
       <footer class="page-footer">
         <div class="page-footer-info">
-          <a class="page-footer-logo" href="index.html"><img src="images/logo.svg" alt="DEVICE" width="145"
+          <a class="page-footer-logo" ><img src="images/logo.svg" alt="DEVICE" width="145"
               height="36"></a>
           <p class="page-footer-text">Санкт-Петербург,&nbsp;набережная реки Карповки, 5, литера П.</p>
         </div>
@@ -345,7 +345,7 @@
     </div>
     <div class="modal-container modal-container-close">
       <div class="modal delivery-order">
-        <button type="button"  class="modal-close-button">
+        <button type="button" class="modal-close-button" tabindex="0">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
@@ -353,16 +353,16 @@
           <form class="delivery-order-form" action="https://echo.htmlacademy.ru/" method="get">
             <div class="form-rows-one">
               <div class="field-group one">
-                <label class="label-title" for="delivery-order-your-name">Ваше имя:</label>
+                <label class="label-title icon-1" for="delivery-order-your-name">Ваше имя:</label>
                 <input class="your-name-field" type="text" id="delivery-order-your-name" name="your-name"
                   placeholder="Введите имя">
-                  <span class="input-signature">Добавьте имя</span>
+                <span class="input-signature">Добавьте имя</span>
               </div>
               <div class="field-group two">
-                <label class="label-title" for="delivery-order-your-email">Ваш e-mail:</label>
+                <label class="label-title icon-2" for="delivery-order-your-email">Ваш e-mail:</label>
                 <input class="your-email-field" type="email" id="delivery-order-your-email" name="your-email"
                   placeholder="Введите e-mail" value="почта">
-                  <span class="input-signature red">Забавный у вас адрес</span>
+                <span class="input-signature red">Забавный у вас адрес</span>
               </div>
             </div>
             <div class="form-rows-two">
@@ -375,7 +375,7 @@
               <div class="field-group four">
 
                 <span class="form-label-tooltip">
-                  <label class="label-title four" for="enter-number">Колличество:</label>
+                  <label class="label-title four" for="enter-number">Количество:</label>
 
                   <span class="tooltip">
                     <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
