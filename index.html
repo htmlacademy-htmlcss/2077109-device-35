@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
-
   <body>
     <header class="page-header">
       <a><img class="logo" src="images/header/device.svg" alt="DEVICE" width="145" height="36"></a>
       <div class="navigation-search-container">
         <div class="navigation-search">
           <form class="navigation-form" method="get" action="https://echo.htmlacademy.ru">
-            <label class="navigation-form-label" tabindex="2"><input class="navigation-form-input" type="search" name="search"
+            <label class="navigation-form-label" tabindex="0"><input class="navigation-form-input" type="search" name="search"
               placeholder="Поиск по сайту"><span class="visually-hidden">Поиск по сайту</span></label>
             <button class="navigation-form-button" type="submit"><span class="search-text">Найти</span></button>
           </form>
@@ -31,7 +29,7 @@
                   <li class="cart-item">
                     <a class="cart-item-link" href="#">
                       <img class="cart-item-img" src="../2077109-device-35/images/cart-amateur-selfie.png"
-                        alt="Amateur selfie stick" width="39" height="43">
+                        alt="Любительская селфи-палка" width="39" height="43">
                       <p class="cart-item-text">Любительская селфи-палка</p>
                     </a>
                     <button type="button" class="cart-item-button"></button>
@@ -39,7 +37,7 @@
                   <li class="cart-item">
                     <a class="cart-item-link" href="#">
                       <img class="cart-item-img" src="../2077109-device-35/images/cart-pro-selfie.png"
-                        alt="pro selfie stick" width="39" height="43">
+                        alt="Профессиональная селфи-палка" width="39" height="43">
                       <p class="cart-item-text">Профессиональная селфи-палка</p>
                     </a>
                     <button type="button" class="cart-item-button"></button>
@@ -79,7 +77,7 @@
             </ul>
           </li>
           <li class="navigation-main-item">
-            <a class="navigation-link-catalog" href="#" disabled>Доставка</a>
+            <a class="navigation-link-catalog" href="#">Доставка</a>
           </li>
           <li class="navigation-main-item">
             <a class="navigation-link-catalog" href="#">Гарантия</a>
@@ -90,7 +88,7 @@
         </ul>
       </nav>
     </header>
-    <main class="page-main container">
+    <main class="page-main main-container">
       <h1 class="visually-hidden">Интернет-магазин гаджетов "DEVICE"</h1>
       <section>
         <h2 class="visually-hidden">Популярные товары</h2>
@@ -197,15 +195,15 @@
           <div class="service-slider-controls">
             <input class="services-slider-input  visually-hidden" id="services-control-1" type="radio"
               name="services-control" checked>
-            <label class="services-slider-label delivery" for="services-control-1" tabindex="1"><span
+            <label class="services-slider-label delivery" for="services-control-1" tabindex="0"><span
                 class="service-text">Доставка</span></label>
             <input class="services-slider-input  visually-hidden" id="services-control-2" type="radio"
               name="services-control">
-            <label class="services-slider-label warranty" for="services-control-2"><span
+            <label class="services-slider-label warranty" for="services-control-2" tabindex="0"><span
                 class="service-text">Гарантия</span></label>
             <input class="services-slider-input  visually-hidden" id="services-control-3" type="radio"
               name="services-control">
-            <label class="services-slider-label credit" for="services-control-3"><span
+            <label class="services-slider-label credit" for="services-control-3" tabindex="0"><span
                 class="service-text">Кредит</span></label>
           </div>
           <div class="services-slider-item delivery ">
@@ -231,7 +229,7 @@
         </div>
       </div>
       <div>
-        <a class="rare-bar" tabindex="3">
+        <a class="rare-bar" tabindex="0">
           <p class="rare-product">Доставим редкий товар под заказ</p>
         </a>
         <div class="about-us-contacts container">
@@ -371,12 +369,9 @@
                 <input class="bring-field" type="text" id="delivery-order-bring" name="bring"
                   placeholder="В свободной форме">
               </div>
-
               <div class="field-group four">
-
                 <span class="form-label-tooltip">
                   <label class="label-title four" for="enter-number">Количество:</label>
-
                   <span class="tooltip">
                     <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
                       <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 26 26">
@@ -387,7 +382,6 @@
                       Привезём сколько получится по требованиям <br>к провозу багажа.</span>
                   </span>
                 </span>
-
                 <div class="input-four">
                   <button class="button-minus" type="button">
                     <span class="visually-hidden">Число минус</span>
@@ -405,5 +399,4 @@
       </div>
     </div>
   </body>
-
 </html>
