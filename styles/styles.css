@@ -31,7 +31,7 @@
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -54,7 +54,7 @@ body {
 }
 
 .main-container {
- flex-grow: 1;
+  flex-grow: 1;
 }
 
 /* page-index */
@@ -183,6 +183,7 @@ body {
   border-radius: 0 50px 50px 0;
   border-left: 0;
   background-color: #FFE17F;
+  border-style: solid;
   border-color: #000000;
   position: relative;
   cursor: pointer;
@@ -553,7 +554,9 @@ body {
   text-decoration: none;
   color: #000000;
   text-transform: uppercase;
-  padding-right: 57px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-right: 67px;
   position: relative;
 }
 
@@ -567,7 +570,7 @@ body {
   background-repeat: no-repeat;
   position: absolute;
   right: 0;
-  transform: translateY(-80%) translateX(20%);
+  top: -2px;
 }
 
 .navigation-link.plus:hover::after {
@@ -715,12 +718,22 @@ body {
   z-index: 2;
 }
 
+.slider-block {
+  margin: 0 auto;
+  width: 1160px;
+  position: relative;
+}
+
+.slider-close {
+  display: none;
+}
+
 .promo-slider-text-header.one::before {
   content: "";
   display: block;
   width: 250px;
   height: 135px;
-  background-image: url(../images/header/01.svg);
+  background-image: url(../images/header/sleder-number-1.svg);
   position: absolute;
   background-repeat: no-repeat;
   top: 29px;
@@ -733,7 +746,7 @@ body {
   display: block;
   width: 250px;
   height: 135px;
-  background-image: url(../images/header/02.svg);
+  background-image: url(../images/header/sleder-number-2.svg);
   position: absolute;
   background-repeat: no-repeat;
   top: 32px;
@@ -746,7 +759,7 @@ body {
   display: block;
   width: 250px;
   height: 135px;
-  background-image: url(../images/header/03.svg);
+  background-image: url(../images/header/sleder-number-3.svg);
   position: absolute;
   background-repeat: no-repeat;
   top: 32px;
@@ -766,6 +779,7 @@ body {
   padding: 0;
   bottom: 5px;
   left: 542px;
+  z-index: 2;
 }
 
 .slider-pagination-button {
@@ -777,6 +791,7 @@ body {
   border: 2px solid #000000;
   border-radius: 50%;
   cursor: pointer;
+  z-index: 2;
 }
 
 .slider-pagination-button:hover {
@@ -817,6 +832,8 @@ body {
   background-color: #FFFFFF;
   border: none;
   background-image: url(../images/slider-button.svg);
+  cursor: pointer;
+  z-index: 2;
 }
 
 .slider-next:hover {
@@ -853,6 +870,8 @@ body {
   border: none;
   background-image: url(../images/slider-button.svg);
   transform: rotate(180deg);
+  cursor: pointer;
+  z-index: 2;
 }
 
 .promo-slider-image {
@@ -961,8 +980,7 @@ body {
 
 .specifications {
   display: flex;
-  width: 310px;
-  min-height: 72px;
+  flex-wrap: wrap;
 }
 
 .specifications.two {
@@ -982,8 +1000,8 @@ body {
 .specifications-left {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   width: 140px;
-  height: 72px;
   margin-right: 20px;
 }
 
@@ -991,7 +1009,6 @@ body {
   display: flex;
   flex-direction: column;
   width: 147px;
-  height: 72px;
 }
 
 .specification-title {
@@ -1017,8 +1034,8 @@ body {
 .main-goods {
   display: flex;
   Width: 1160px;
-  justify-content: space-between;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .main-goods-link {
@@ -1026,6 +1043,10 @@ body {
   Height: 253px;
   text-decoration: none;
   color: #000000;
+}
+
+.main-goods-link:not(:last-child) {
+  margin-right: 40px;
 }
 
 .main-goods-link-text {
@@ -1181,7 +1202,7 @@ body {
   display: block;
   width: 7px;
   height: 319px;
-  background-image: url(../images/Rectangle.svg);
+  background-image: url(../images/rectangle.svg);
   position: absolute;
   right: 0;
   top: -63px;
@@ -1202,6 +1223,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 452px;
+  flex-wrap: wrap;
   margin-left: 117px;
   margin-top: -28px;
   padding-right: 246px;
@@ -1581,7 +1603,6 @@ body {
   Width: 1440px;
   min-height: 421px;
   background-color: #F0F0F0;
-  justify-content: space-between;
   margin: 0 auto;
   margin-top: 70px;
 }
@@ -1593,7 +1614,9 @@ body {
 
 .subscribe-up {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
+  margin-bottom: 125px;
 }
 
 .subscribe-text-bold {
@@ -1610,31 +1633,34 @@ body {
 }
 
 .subscribe-text {
+  display: flex;
+  flex-wrap: wrap;
   font-family: "Rubik", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   Width: 560px;
-  Height: 90px;
   margin-top: 74px;
 }
 
 .subscribe-down {
+  width: 1158px;
   display: flex;
-  min-height: 112px;
+  margin-left: 138px;
+  margin-bottom: 56px;
 }
 
 .subscribe-form {
   display: flex;
   width: 810px;
   height: 57px;
-  margin-left: 138px;
   margin-right: 193px;
 }
 
 .subscribe-form-input {
-  width: 100%;
+  box-sizing: border-box;
+  width: 557px;
   background-color: #F0F0F0;
   border-left: 0;
   border-top: 0;
@@ -2540,7 +2566,6 @@ body {
 .sidebar {
   display: flex;
   width: 320px;
-  min-height: 1316px;
   flex-direction: column;
   margin-right: 5px;
 }
@@ -2681,7 +2706,7 @@ body {
   background-color: transparent;
   border: none;
   -webkit-appearance: textfield;
-          appearance: textfield;
+  appearance: textfield;
 }
 
 .range-input.max {
@@ -2692,13 +2717,13 @@ body {
   background-color: transparent;
   border: none;
   -webkit-appearance: textfield;
-          appearance: textfield;
+  appearance: textfield;
 }
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 
 .catalog-filter-label-1 {
@@ -2744,7 +2769,7 @@ body {
 }
 
 .control-label {
-  font-family: 'Rubik';
+  font-family: "Rubik", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2806,7 +2831,6 @@ body {
   z-index: 1;
   margin-left: 62px;
   margin-top: 4px;
-
 }
 
 .filter-button::before {
@@ -3067,6 +3091,14 @@ body {
   margin: 0;
 }
 
+.goods-item-price {
+  font-family: "Rubik", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
 .button-download-more {
   box-sizing: border-box;
   width: 760px;
@@ -3187,5 +3219,35 @@ body {
   line-height: 20px;
   text-decoration: none;
   color: #444444;
+  outline: none;
   opacity: 0.3;
+}
+
+.pagination-item {
+  outline: none;
+  position: relative;
+}
+
+.pagination-item::after {
+  content: "";
+  display: none;
+  width: 44px;
+  height: 44px;
+  border: 2px solid #AF4FFF;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -19px;
+}
+
+.pagination-link:hover {
+  opacity: 1;
+}
+
+.pagination-link:active {
+  opacity: 0.1
+}
+
+.pagination-item:focus-visible::after {
+  display: block;
 }

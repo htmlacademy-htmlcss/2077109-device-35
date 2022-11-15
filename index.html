@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
   <body>
     <header class="page-header">
@@ -12,8 +13,8 @@
       <div class="navigation-search-container">
         <div class="navigation-search">
           <form class="navigation-form" method="get" action="https://echo.htmlacademy.ru">
-            <label class="navigation-form-label" tabindex="0"><input class="navigation-form-input" type="search" name="search"
-              placeholder="Поиск по сайту"><span class="visually-hidden">Поиск по сайту</span></label>
+            <label class="navigation-form-label" tabindex="0"><input class="navigation-form-input" type="search"
+                name="search" placeholder="Поиск по сайту"><span class="visually-hidden">Поиск по сайту</span></label>
             <button class="navigation-form-button" type="submit"><span class="search-text">Найти</span></button>
           </form>
         </div>
@@ -60,7 +61,7 @@
       <nav class="navigation">
         <ul class="navigation-main-list">
           <li class="navigation-main-item sub-catalog">
-            <a class="navigation-link plus minus" href="#">Каталог товаров</a>
+            <a class="navigation-link plus" href="#">Каталог товаров</a>
             <ul class="sub-menu-list">
               <li class="sub-menu-item column-one">
                 <a class="sub-menu-link" href="#">Виртуальная реальность</a>
@@ -90,7 +91,7 @@
     </header>
     <main class="page-main main-container">
       <h1 class="visually-hidden">Интернет-магазин гаджетов "DEVICE"</h1>
-      <section>
+      <section class="slider-block">
         <h2 class="visually-hidden">Популярные товары</h2>
         <div class="promo-slider-container">
           <div class="promo-slider-image">
@@ -113,7 +114,9 @@
               </div>
             </div>
           </div>
-          <!-- <div class="promo-slider-image">
+        </div>
+        <div class="promo-slider-container slider-close">
+          <div class="promo-slider-image">
             <img src="images/slider-2.png" alt="Фитнес-браслет" width="560" height="560">
           </div>
           <div class="promo-slider-info">
@@ -125,8 +128,10 @@
               <h3 class="specification-title">48 часов</h3>
               <p class="specification-text">Без подзарядки</p>
             </div>
-          </div> -->
-          <!-- <div class="promo-slider-image">
+          </div>
+        </div>
+        <div class="promo-slider-container slider-close">
+          <div class="promo-slider-image">
             <img src="images/slider-3.png" alt="Самая длинная палка для селфи" width="560" height="560">
           </div>
           <div class="promo-slider-info">
@@ -149,33 +154,33 @@
                 <p class="specification-text">Материал</p>
               </div>
             </div>
-          </div> -->
-          <div class="slider-button-block">
-            <button class="slider-next" type="button">
-              <span class="visually-hidden">Предыдущее фото</span>
-            </button>
-            <button class="slider-prev" type="button">
-              <span class="visually-hidden">Следующее фото</span>
-            </button>
           </div>
-          <ol class="slider-pagination">
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                <span class="visually-hidden">Первый слайд</span>
-              </button>
-            </li>
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button" type="button">
-                <span class="visually-hidden">Второй слайд</span>
-              </button>
-            </li>
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button" type="button">
-                <span class="visually-hidden">Третий слайд</span>
-              </button>
-            </li>
-          </ol>
         </div>
+        <div class="slider-button-block">
+          <button class="slider-next" type="button">
+            <span class="visually-hidden">Предыдущее фото</span>
+          </button>
+          <button class="slider-prev" type="button">
+            <span class="visually-hidden">Следующее фото</span>
+          </button>
+        </div>
+        <ol class="slider-pagination">
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button slider-pagination-button-current" type="button">
+              <span class="visually-hidden">Первый слайд</span>
+            </button>
+          </li>
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button" type="button">
+              <span class="visually-hidden">Второй слайд</span>
+            </button>
+          </li>
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button" type="button">
+              <span class="visually-hidden">Третий слайд</span>
+            </button>
+          </li>
+        </ol>
       </section>
       <section class="main-goods">
         <h2 class="visually-hidden">Категории товаров</h2>
@@ -208,7 +213,8 @@
           </div>
           <div class="services-slider-item delivery ">
             <b class="service-slider-text-header">Доставка</b>
-            <p class="service-slider-text-main delivery">Мы с удовольствием доставим ваш товар прямо <br> к вашему подъезду совершенно
+            <p class="service-slider-text-main delivery">Мы с удовольствием доставим ваш товар прямо <br> к вашему
+              подъезду совершенно
               бесплатно! Ведь<br> мы неплохо
               заработаем, поднимая его на ваш этаж.</p>
           </div>
@@ -272,8 +278,7 @@
           </div>
           <div class="subscribe-down">
             <form class="subscribe-form" method="get" action="https://echo.htmlacademy.ru">
-              <input class="subscribe-form-input" id="subscribe" type="email" name="subscribe" placeholder="Ваш e-mail"
-                >
+              <input class="subscribe-form-input" id="subscribe" type="email" name="subscribe" placeholder="Ваш e-mail">
               <button class="subscribe-form-button" type="submit"><span
                   class="subscribe-form-button-text">Подписаться</span></button>
               <label class="subscribe-form-label" for="subscribe"></label>
@@ -286,8 +291,7 @@
     <div class="page-footer-container">
       <footer class="page-footer">
         <div class="page-footer-info">
-          <a class="page-footer-logo" ><img src="images/logo.svg" alt="DEVICE" width="145"
-              height="36"></a>
+          <a class="page-footer-logo"><img src="images/logo.svg" alt="DEVICE" width="145" height="36"></a>
           <p class="page-footer-text">Санкт-Петербург,&nbsp;набережная реки Карповки, 5, литера П.</p>
         </div>
         <div class="page-footer-services">
