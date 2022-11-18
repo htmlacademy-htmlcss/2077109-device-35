@@ -97,6 +97,27 @@ body {
   outline: 2px solid #AF4FFF;
 }
 
+.logo-link-catalog {
+  display: flex;
+  width: 145px;
+  height: 36px;
+  margin-top: -20px;
+  margin-bottom: 30px;
+  margin-left: 60px;
+}
+
+.logo-link-catalog:hover {
+  opacity: 0.6;
+}
+
+.logo-link-catalog:active {
+  opacity: 0.3;
+}
+
+.logo-link-catalog:focus-visible {
+  outline: 2px solid #AF4FFF;
+}
+
 .navigation-search-container {
   box-sizing: border-box;
   display: flex;
@@ -1129,7 +1150,6 @@ body {
   display: flex;
   flex-direction: column;
   width: 287px;
-  height: 190px;
   margin-left: 140px;
   font-family: "Raleway", Arial, sans-serif;
   font-style: normal;
@@ -1779,7 +1799,10 @@ body {
 }
 
 .page-footer-logo {
-  margin-bottom: 26px;
+  display: flex;
+  width: 145px;
+  height: 36px;
+  margin-bottom: 36px;
 }
 
 .page-footer-logo:hover {
@@ -2568,6 +2591,7 @@ body {
   width: 320px;
   flex-direction: column;
   margin-right: 5px;
+  margin-bottom: 30px;
 }
 
 .sidebar-title {
